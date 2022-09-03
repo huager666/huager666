@@ -1,0 +1,59 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    int t = 0;
+    char x = 0;
+    float m0 = 0;
+    float m1 = 0;
+    float D = 6.2619;
+    float E = 6.6744;
+    float Y = 0.0516;
+    float H = 0.8065;
+    float const* c;
+    cin >> t;
+
+    for (int i = 0; i < t; i++)
+    {
+        cin >> x;
+       
+
+        if (x=='D')
+        {
+            c = &D;
+            cin >> m0;
+            m1 = m0 * *c;
+            cout << fixed << setprecision(4) << m1<<endl;
+        }
+        if (x == 'E')
+        {
+            c = &E;
+            cin >> m0;
+            m1 = m0 * *c;
+            cout << fixed << setprecision(4) << m1 << endl;
+        }
+        if (x == 'Y')
+        {
+            c = &Y;
+            cin >> m0;
+            m1 = m0 * *c;
+            cout << fixed << setprecision(4) << m1 << endl;
+        }
+        if (x == 'H')
+        {
+            c = &H;
+            cin >> m0;
+            m1 = m0 * *c;
+            cout << fixed << setprecision(4) << m1 << endl;
+        }
+        
+        
+
+    }
+
+
+
+    //cout <<*p1<<' '<<*p2<<' '<<*p3<<endl;
+}
